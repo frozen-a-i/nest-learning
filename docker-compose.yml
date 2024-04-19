@@ -10,6 +10,7 @@ services:
       - 5432:5432
     volumes:
       - postgres_data:/var/lib/postgresql/data
+ 
 
   adminer:
     image: adminer:latest
@@ -17,6 +18,8 @@ services:
       ADMINER_DEFAULT_SERVER: postgres
     ports:
       - 8080:8080
+  
 
 volumes:
   postgres_data:
+
